@@ -17,7 +17,7 @@ The description of the variables and the sources they were collected from is pro
 
 House price indices
 
-Knoll et al. (2017) presents a novel dataset that covers residential house price indices for 14 advanced economies over the years 1870 to 2012. 
+Knoll et al. (2917) presents a novel dataset that covers residential house price indices for 14 advanced economies over the years 1870 to 2012. 
 The data are distributed through openICPSR, a public access repository supported by the Inter-university Consortium for Political and Social Research (ICPSR), under an Other License.
 The dataset is freely available and was downloaded on 13 January 2022 from https://www.openicpsr.org/openicpsr/project/113055/version/V1/view.
 
@@ -53,11 +53,13 @@ Files
 The overall structure of the code is as follows. There are four main files each of which produces a specific part of the simulations and applications:
 
 - main_sim_test.r produces the size and power simulations for our multiscale test reported in Section 6.
-- main_sim_clustering.r produces the finite sample properties of the clustering algorithm reported in Section 6.
+- main_sim_test.r produces the finite sample properties of the clustering algorithm reported in Section 6.
 - main_app_gdp.r produces the application results from Section 7.1, where our multiscale test and the clustering procedure are applied to compare the trends in the GDP time series.
 - main_app_hp.r produces the application results from Section 7.2, where our multiscale test and the clustering procedure are applied to compare the trends in the real house prices.
 
-Our multiscale test is implemented in the R package "MSinference", available on CRAN. In order to run the code on your computer, you will need our R package "MSinference" as well as R packages "Rcpp", "dplyr", "tidyr", "zoo", "haven", "dendextend", "xtable", "car", "ggplot2", "Matrix", "foreach", "parallel", "iterators", "doParallel" and "seasonal". The latter packages are freely available on CRAN.
+Our multiscale test is implemented in the R package "multiscale", available from GitHub at https://github.com/marina-khi/multiscale_inference.
+In order to run the code on your computer, you will need our R package "multiscale" as well as R packages "Rcpp", "dplyr", "tidyr", "zoo", "haven", "dendextend", "xtable", "car",
+"ggplot2", "Matrix", "foreach", "parallel", "iterators", "doParallel" and "seasonal". The latter packages are freely available on CRAN.
 
 These main files read in a number of functions which are collected in the folder .\functions. The simulation and application results are stored either as figures or as .tex files (for tables)
 in the folder .\output and the subfolders therein. The tables and figures are as in the paper up to the seed.
