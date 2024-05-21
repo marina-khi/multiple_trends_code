@@ -52,10 +52,10 @@ Files
 
 The overall structure of the code is as follows. There are four main files each of which produces a specific part of the simulations and applications:
 
-- main_sim_test.r produces the size and power simulations for our multiscale test reported in Section 6.
-- main_sim_test.r produces the finite sample properties of the clustering algorithm reported in Section 6.
-- main_app_gdp.r produces the application results from Section 7.1, where our multiscale test and the clustering procedure are applied to compare the trends in the GDP time series.
-- main_app_hp.r produces the application results from Section 7.2, where our multiscale test and the clustering procedure are applied to compare the trends in the real house prices.
+- main_sim_test.r, main_sim_test_dyadic.r, main_sim_test_sizer.r produce the size and power simulations for our multiscale test reported in Section A in the Supplement.
+- main_sim_clustering.r, main_sim_clustering_comparison.r produce the finite sample properties of the clustering algorithm reported in Section Supplement.
+- main_app_gdp.r produces the application results from Section B in the Supplement, where our multiscale test and the clustering procedure are applied to compare the trends in the GDP time series.
+- main_app_hp.r produces the application results from Section 6, where our multiscale test and the clustering procedure are applied to compare the trends in the real house prices.
 
 Our multiscale test is implemented in the R package "multiscale", available from GitHub at https://github.com/marina-khi/multiscale_inference.
 In order to run the code on your computer, you will need our R package "multiscale" as well as R packages "Rcpp", "dplyr", "tidyr", "zoo", "haven", "dendextend", "xtable", "car",
